@@ -1,0 +1,36 @@
+--- validator-pair1 exit=124 old edgebench.judge.smt_solver:cd3a5bf1f538 new edgebench.judge.smt_solver:e70c10c6fb4b order ['old']
+old valid True score 0.0 correct=0/0 grade_s 1473 BrokenProcessPool 1 {}
+new no report
+--- validator-pair2 exit=0 old edgebench.judge.smt_solver:cd3a5bf1f538 new edgebench.judge.smt_solver:e70c10c6fb4b order ['new']
+old no report
+new valid True score 46.15 correct=328/774 grade_s 1861 BrokenProcessPool 0 {'QF_LIA': (75, 1, 141, 0), 'QF_LRA': (50, 0, 156, 0), 'QF_UF': (109, 27, 24, 0), 'QF_UFLRA': (94, 0, 1, 7)}
+--- validator-checks exit=0 old edgebench.judge.smt_solver:cd3a5bf1f538 new edgebench.judge.smt_solver:e70c10c6fb4b
+('buildfail', 'new') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('buildfail', 'old') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('ground_wrong', 'new') [(0.0, True, 'correct=0/774', ''), (0.0, True, 'correct=0/774', '')]
+('ground_wrong', 'old') [(0.0, True, 'correct=0/774', ''), (0.0, True, 'correct=0/774', '')]
+('nosolve', 'new') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('nosolve', 'old') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('preflight', 'new') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('preflight', 'old') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('stub', 'new') [(0.11, True, 'correct=1/774', ''), (0.11, True, 'correct=1/774', '')]
+('stub', 'old') [(0.0, True, 'correct=0/0', 'BPP'), (0.0, True, 'correct=0/0', 'BPP')]
+('textual', 'new') [(6.28, True, 'correct=42/774', ''), (6.28, True, 'correct=42/774', '')]
+('textual', 'old') [(6.28, True, 'correct=42/774', ''), (6.28, True, 'correct=42/774', '')]
+('unknown', 'new') [(0.0, True, 'correct=0/774', ''), (0.0, True, 'correct=0/774', '')]
+('unknown', 'old') [(0.0, True, 'correct=0/774', ''), (0.0, True, 'correct=0/774', '')]
+--- status-checks2 exit=0 old sha256:208db11ba4aa23b80c75dd1b87f9ffecb033ab11c381fc983e26738adb91676d
+('buildfail', 'new') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('buildfail', 'old') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('ground_wrong', 'new') [(0.0, True, 'correct=0/774', ''), (0.0, True, 'correct=0/774', '')]
+('ground_wrong', 'old') [(0.0, True, 'correct=0/774', ''), (0.0, True, 'correct=0/774', '')]
+('nosolve', 'new') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('nosolve', 'old') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('preflight', 'new') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('preflight', 'old') [(0.0, True, 'correct=0/0', ''), (0.0, True, 'correct=0/0', '')]
+('stub', 'new') [(None, False, 'evaluator exited with status 1 before writing a score file', 'BPP'), (None, False, 'evaluator exited with status 1 before writing a score file', 'BPP')]
+('stub', 'old') [(0.0, True, 'correct=0/0', 'BPP'), (0.0, True, 'correct=0/0', 'BPP')]
+('textual', 'new') [(6.28, True, 'correct=42/774', ''), (6.28, True, 'correct=42/774', '')]
+('textual', 'old') [(6.28, True, 'correct=42/774', ''), (6.28, True, 'correct=42/774', '')]
+('unknown', 'new') [(0.0, True, 'correct=0/774', ''), (0.0, True, 'correct=0/774', '')]
+('unknown', 'old') [(0.0, True, 'correct=0/774', ''), (0.0, True, 'correct=0/774', '')]
