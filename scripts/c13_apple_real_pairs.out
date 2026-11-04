@@ -1,0 +1,28 @@
+submission round old_score new_score delta raw_delta_% old_ok new_ok old_s new_s
+0d9067d735 1 19.58 19.58 +0.00 +0.00 50 50 80 81
+0d9067d735 2 19.58 19.58 +0.00 +0.00 50 50 81 79
+3028fcd307 1 67.25 72.84 +5.59 +0.68 50 50 213 381
+55d48be987 1 31.75 38.75 +7.00 +0.90 50 50 186 329
+56f421c326 1 19.88 19.88 +0.00 +0.00 50 50 122 124
+7262df8fdb 1 37.89 48.75 +10.86 +1.38 50 50 185 329
+798462a5ca 1 49.09 59.23 +10.13 +1.27 50 50 206 368
+ea358a6e0e 1 67.48 72.32 +4.84 +0.59 50 50 213 381
+f441c08258 1 68.33 71.99 +3.65 +0.45 50 50 218 392
+f441c08258 2 68.29 72.49 +4.20 +0.51 50 50 218 391
+feb5f3fc06 1 51.99 58.90 +6.91 +0.86 50 50 192 337
+feb5f3fc06 2 51.36 58.53 +7.17 +0.90 50 50 193 335
+submissions=9 pairs=12 delta_min=+0.00 delta_max=+10.86 lower_on_new=0 cases_min=50
+max_new_s 392 max_old_s 218
+SFORGE_CPUS on the new judge, valid answer plus 1 s per case, 8 vCPUs online:
+  [ABSENT] wall=14.0 valid=true 50/50 tests passed
+  [] wall=0.5 valid=false 0/1 tests passed. Failed: unknown. No TO
+  [0] wall=0.5 valid=false 0/1 tests passed. Failed: unknown. No TO
+  [-1] wall=0.5 valid=false 0/1 tests passed. Failed: unknown. No TO
+  [abc] wall=0.4 valid=false 0/1 tests passed. Failed: unknown. No TO
+  [2.5] wall=0.5 valid=false 0/1 tests passed. Failed: unknown. No TO
+  [1] wall=52.4 valid=true 50/50 tests passed
+  [2] wall=26.4 valid=true 50/50 tests passed
+  [3] wall=18.1 valid=true 50/50 tests passed
+  [4] wall=14.0 valid=true 50/50 tests passed
+  [8] wall=7.7 valid=true 50/50 tests passed
+  [16] wall=7.8 valid=true 50/50 tests passed

@@ -1,0 +1,32 @@
+community13-apple-more-a old key 506688ea9aec new key 71e8a001fed1
+community13-apple-more-b old key 506688ea9aec new key 71e8a001fed1
+community17-apple-more-c old key 506688ea9aec new key 71e8a001fed1
+submission round first old new delta raw_delta_% old_ok new_ok old_runtime_s new_runtime_s old_cmd_s new_cmd_s
+0d9067d735 1 old 19.58 19.58 +0.00 +0.00 50 50 64.9 64.6 80 81
+0d9067d735 2 new 19.58 19.58 +0.00 +0.00 50 50 64.7 63.5 81 79
+3028fcd307 1 old 67.25 72.84 +5.59 +0.68 50 50 197.0 364.9 213 381
+3028fcd307 2 new 69.65 74.01 +4.36 +0.53 50 50 196.8 364.8 213 380
+55d48be987 1 old 31.75 38.75 +7.00 +0.90 50 50 169.3 313.2 186 329
+55d48be987 2 new 33.70 42.29 +8.59 +1.10 50 50 169.0 313.0 185 329
+56f421c326 1 new 19.88 19.88 +0.00 +0.00 50 50 106.3 108.4 122 124
+56f421c326 2 old 19.88 19.88 +0.00 +0.00 50 50 79.8 80.2 95 96
+7262df8fdb 1 old 37.89 48.75 +10.86 +1.38 50 50 169.0 313.0 185 329
+7262df8fdb 2 new 41.80 51.27 +9.47 +1.20 50 50 168.9 312.8 185 329
+798462a5ca 1 new 49.09 59.23 +10.13 +1.27 50 50 190.2 352.2 206 368
+798462a5ca 2 old 54.85 63.91 +9.05 +1.13 50 50 190.1 352.1 205 368
+ea358a6e0e 1 new 67.48 72.32 +4.84 +0.59 50 50 197.0 364.9 213 381
+ea358a6e0e 2 old 69.97 73.93 +3.96 +0.48 50 50 196.8 364.8 212 381
+f441c08258 1 old 68.33 71.99 +3.65 +0.45 50 50 202.5 375.3 218 392
+f441c08258 2 new 68.29 72.49 +4.20 +0.51 50 50 202.6 375.3 218 391
+feb5f3fc06 1 old 51.99 58.90 +6.91 +0.86 50 50 176.7 320.6 192 337
+feb5f3fc06 2 new 51.36 58.53 +7.17 +0.90 50 50 176.7 319.9 193 335
+submissions=9 pairs=18 delta_min=+0.00 delta_max=+10.86 lower_on_new=0 cases_min=50
+moved files=7 pairs=14 range +3.65 +10.86; unmoved files=2 pairs=4 range +0.00 +0.00
+max_new_cmd_s 392 max_old_cmd_s 218
+--- lower --judge-cpu-limit, one file, timeout_sec 1800 on new, order as graded
+new-2-r1 limit 2 rc 0 cmd_s 737 valid True score 73.28 50/50 runtime_s 721.4
+old-2-r1 limit 2 rc 0 cmd_s 219 valid True score 30.88 48/50 runtime_s 203.0
+old-2-r2 limit 2 rc 0 cmd_s 219 valid True score 19.85 47/50 runtime_s 203.1
+new-2-r2 limit 2 rc 0 cmd_s 738 valid True score 73.3 50/50 runtime_s 721.5
+new-1-r1 limit 1 rc 0 cmd_s 1459 valid True score 72.61 50/50 runtime_s 1443.0
+new-1-r2 limit 1 rc 0 cmd_s 1460 valid True score 72.89 50/50 runtime_s 1443.2

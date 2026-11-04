@@ -1,0 +1,6 @@
+limit=2 new wall=616s valid=False timed_out=True score=None None grader wrote no /opt/sforge/result.json
+limit=2 old wall=220s valid=True timed_out=False score=17.75786865802385 43/50 tests passed. Failed: case_0000_TLE, ca 
+limit=3 new wall=506s valid=True timed_out=False score=72.23086235441083 50/50 tests passed 
+limit=3 old wall=219s valid=True timed_out=False score=47.445187450256704 49/50 tests passed. Failed: case_0008_TLE 
+limit=1 new wall=616s valid=False timed_out=True score=None None grader wrote no /opt/sforge/result.json
+limit=0 new wall=16s valid=False timed_out=False score=None 0/1 tests passed. Failed: unknown. No TOTAL_S 

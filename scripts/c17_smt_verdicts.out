@@ -1,0 +1,14 @@
+inputs 774 with model 354 checked 354
+  ('accepted', 'accepted') 322
+  ('rc=-11', 'accepted') 4
+  ('rejected', 'rejected') 28
+identical verdict text 350
+differ:
+  QF_UFLRA/85b67deb9ba8a2ab.smt2 rc=-11 -> accepted old_s=2.2 new_s=4.1
+  QF_UFLRA/8e72757e0b560007.smt2 rc=-11 -> accepted old_s=2.2 new_s=3.7
+  QF_UFLRA/bc8b317ecdcf7301.smt2 rc=-11 -> accepted old_s=8.4 new_s=10.0
+  QF_UFLRA/e4bf0f1de993c180.smt2 rc=-11 -> accepted old_s=8.3 new_s=10.5
+ rejected by both ('QF_UF', 'ModelValidationError', 'congruence violation') 25
+ rejected by both ('QF_UF', 'ModelValidationError', 'assertion is') 2
+ rejected by both ('QF_LIA', 'ModelValidationError', 'assertion is') 1
+slowest new_s 39.8 total old_s 834 total new_s 840

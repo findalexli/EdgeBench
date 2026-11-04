@@ -1,0 +1,21 @@
+inputs 774 with model 367 checked 367
+  ('accepted', 'accepted') 334
+  ('rc=-11', 'accepted') 5
+  ('rejected', 'rejected') 28
+identical verdict text 362
+differ:
+  QF_UFLRA/7cf7d9bc1df9f7f0.smt2 rc=-11 -> accepted old_s=13.9 new_s=294.8
+  QF_UFLRA/85b67deb9ba8a2ab.smt2 rc=-11 -> accepted old_s=1.9 new_s=2.7
+  QF_UFLRA/8e72757e0b560007.smt2 rc=-11 -> accepted old_s=1.8 new_s=2.6
+  QF_UFLRA/bc8b317ecdcf7301.smt2 rc=-11 -> accepted old_s=7.2 new_s=8.2
+  QF_UFLRA/e4bf0f1de993c180.smt2 rc=-11 -> accepted old_s=7.2 new_s=8.1
+ rejected by both ('QF_UF', 'ModelValidationError', 'congruence violation') 25
+ rejected by both ('QF_UF', 'ModelValidationError', 'assertion is') 2
+ rejected by both ('QF_LIA', 'ModelValidationError', 'assertion is') 1
+slowest new_s 294.8 total old_s 899 total new_s 1182
+guarded old 45.84 score=0.458449 (45.84/100), correct=325/774 runtime=1592 
+guarded new 45.58 score=0.455816 (45.58/100), correct=325/774 runtime=1592 
+  QF_LIA correct=75/76 timeout=141/140 invalid_model=1/1 unknown=0/0 error=0/0
+  QF_LRA correct=51/49 timeout=155/157 invalid_model=0/0 unknown=0/0 error=0/0
+  QF_UF correct=109/109 timeout=23/25 invalid_model=27/27 unknown=0/0 error=0/0
+  QF_UFLRA correct=90/91 timeout=2/2 invalid_model=0/0 unknown=5/5 error=5/4

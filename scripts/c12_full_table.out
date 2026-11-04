@@ -1,0 +1,80 @@
+sub cond judge n workers score_range ok_range max_runtime_s all_valid
+fast hot4 new 3 c9a,c9smoke 6.37-6.37 50-50 1.2 True
+fast hot4 old 3 c9a,c9smoke 6.37-6.37 50-50 1.2 True
+fast q4 old 1 c9smoke 6.37-6.37 50-50 1.1 True
+fix80 hot4 new 2 c9c 19.88-19.88 50-50 114.6 True
+fix80 hot4 old 2 c9c 19.88-19.88 50-50 109.3 True
+fork hot4 new 6 c10r1,c9a,c9d,c9e 73.25-74.49 50-50 365.0 True
+fork hot4 old 6 c10r1,c9a,c9d,c9e 68.10-70.60 50-50 197.0 True
+fork q4 new 2 c9c 72.65-73.14 50-50 365.0 True
+fork q4 old 11 c10r1,c9c,c9d,c9e 65.49-71.05 50-50 197.0 True
+fork x2 new 2 c9a 72.98-73.36 50-50 364.9 True
+fork x2 old 2 c9a 67.89-68.12 50-50 197.0 True
+fork x3 new 3 c9a 70.48-71.80 50-50 365.3 True
+fork x3 old 3 c9a 63.96-65.28 50-50 197.2 True
+fork x5 new 25 c10r1,c9c,c9d,c9e 17.81-68.89 43-50 370.1 True
+fork x5 old 25 c10r1,c9c,c9d,c9e 3.09-31.08 14-48 206.2 True
+st hot4 new 3 c9b 67.47-69.04 50-50 314.9 True
+st hot4 old 4 c9b,c9smoke 62.95-64.61 50-50 171.1 True
+st q4 new 1 c9b 67.68-67.68 50-50 314.7 True
+st q4 old 1 c9b 61.37-61.37 50-50 171.4 True
+st x3 new 3 c9b 63.84-65.39 50-50 316.3 True
+st x3 old 3 c9b 58.94-60.17 50-50 171.9 True
+st x5 new 5 c9b 60.54-61.57 50-50 318.4 True
+st x5 old 5 c9b 54.11-55.37 50-50 174.0 True
+--- matched pairs, new minus old
+fast hot4 n 3 0.00..0.00 mean 0.00
+fix80 hot4 n 2 0.00..0.00 mean 0.00
+fork hot4 n 6 3.32..5.16 mean 4.46
+fork q4 n 2 6.28..6.96 mean 6.62
+fork x2 n 2 4.86..5.47 mean 5.17
+fork x3 n 3 5.29..7.84 mean 6.48
+fork x5 n 25 13.70..55.73 mean 42.31
+st hot4 n 3 3.52..5.48 mean 4.21
+st q4 n 1 6.31..6.31 mean 6.31
+st x3 n 3 4.39..6.45 mean 5.19
+st x5 n 5 5.37..7.15 mean 6.27
+deadline files, true 4 CPUs: pairs 9 3.32..5.48
+--- file hashes
+fast 13fa1efd2e4ab9afd432c2b52c37f183065fd99f39b52a4d989be7090aa312c5 3113 bytes
+fix80 79adddf3369d5883a4eb7efe729927f84284c59018893703d9e18153e4b1e455 6785 bytes
+fork 74dcf0e244df4651a84e01cb8ad8c1c79b072a0afaf11699e4fd6aca24947044 27731 bytes
+st dbb350cf31c59a319d310ff463989bce6f22e64155f1b5b15be5a5779d202c32 11933 bytes
+--- original agent runs
+reports 89 {'50/50': 89}
+same archive fe62a9d275 n 2 66.36-66.91
+same archive 265f3a3690 n 5 69.22-69.64
+same archive e9df2ef6db n 2 66.96-67.43
+same archive 830c20496a n 2 70.15-70.42
+same archive 5d089c81c7 n 2 67.00-67.17
+same archive 063e21c6fe n 4 63.75-65.77
+same archive 260c53cfa1 n 2 59.47-61.12
+same archive be45604a49 n 2 67.06-67.18
+same archive dc9dd72da6 n 2 61.01-61.32
+same archive 9fc7f85c6e n 2 55.09-55.25
+same archive e36c239e03 n 3 57.99-58.70
+same archive 298d6405c5 n 2 64.04-65.39
+same archive 09fd4a519d n 2 63.69-65.01
+same archive ea358a6e0e n 2 69.33-70.82
+same archive cc04279e9e n 2 69.42-70.66
+same archive bfc73bf079 n 2 68.72-69.96
+same archive 55d48be987 n 2 33.25-33.98
+same archive b48b81dc63 n 2 63.06-63.55
+same archive 3028fcd307 n 2 69.70-71.59
+same archive f441c08258 n 2 68.34-69.81
+same archive 9dc3e08fa1 n 3 59.80-62.34
+same archive 3bcf94d54f n 2 59.74-60.85
+same archive 8d694e24f8 n 4 59.34-61.89
+same archive feb5f3fc06 n 3 51.12-52.08
+same archive 42844f7281 n 2 57.83-57.95
+same archive e5c5c17aa9 n 2 53.74-53.87
+same archive a9e68589be n 2 60.84-60.95
+--- the 28 s file under 5 judges at once, by worker
+old c10r1 n 5 30.12-31.08 ok 48-48
+old c9c n 10 8.15-9.68 ok 24-27
+old c9d n 5 18.83-19.78 ok 45-47
+old c9e n 5 3.09-4.62 ok 14-17
+new c10r1 n 5 68.45-68.89 ok 50-50
+new c9c n 10 62.95-64.48 ok 50-50
+new c9d n 5 67.36-68.87 ok 50-50
+new c9e n 5 17.81-18.79 ok 43-45

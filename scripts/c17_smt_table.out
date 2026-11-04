@@ -1,0 +1,88 @@
+old edgebench.judge.smt_solver:cd3a5bf1f538 new edgebench.judge.smt_solver:08140b58c121
+--- real solver pair, order as in summary.txt: ['old', 'new']
+old valid True score 0.0 correct=0/0 grade_s 1495 BrokenProcessPool 1 {}
+new valid True score 47.34 correct=336/774 grade_s 1554 BrokenProcessPool 0 {'QF_LIA': (77, 1, 139, 0), 'QF_LRA': (56, 0, 148, 1), 'QF_UF': (109, 27, 23, 0), 'QF_UFLRA': (94, 0, 1, 6)}
+ container 9ea468c718b2 sampled_s 1479 oom_kill 2
+ container 513a7e08a1ac sampled_s 1539 oom_kill 7
+--- controls through sforge eval, label side: (score, valid, correct, grade_s) per order
+('buildfail', 'new') [(0.0, True, 'correct=0/0', 0.3), (0.0, True, 'correct=0/0', 0.3)]
+('buildfail', 'old') [(0.0, True, 'correct=0/0', 0.3), (0.0, True, 'correct=0/0', 0.2)]
+('ground_wrong', 'new') [(0.0, True, 'correct=0/774', 18.1), (0.0, True, 'correct=0/774', 17.7)]
+('ground_wrong', 'old') [(0.0, True, 'correct=0/774', 18.1), (0.0, True, 'correct=0/774', 18.9)]
+('nosolve', 'new') [(0.0, True, 'correct=0/0', 0.5), (0.0, True, 'correct=0/0', 0.5)]
+('nosolve', 'old') [(0.0, True, 'correct=0/0', 0.4), (0.0, True, 'correct=0/0', 0.5)]
+('preflight', 'new') [(0.0, True, 'correct=0/0', 0.5), (0.0, True, 'correct=0/0', 0.5)]
+('preflight', 'old') [(0.0, True, 'correct=0/0', 0.5), (0.0, True, 'correct=0/0', 0.5)]
+('stub', 'new') [(0.11, True, 'correct=1/774', 8.0), (0.11, True, 'correct=1/774', 8.2)]
+('stub', 'old') [(0.0, True, 'correct=0/0', 9.3), (0.0, True, 'correct=0/0', 6.8)]
+('textual', 'new') [(6.28, True, 'correct=42/774', 26.4), (6.28, True, 'correct=42/774', 25.5)]
+('textual', 'old') [(6.28, True, 'correct=42/774', 27.2), (6.28, True, 'correct=42/774', 25.2)]
+('unknown', 'new') [(0.0, True, 'correct=0/774', 5.1), (0.0, True, 'correct=0/774', 6.2)]
+('unknown', 'old') [(0.0, True, 'correct=0/774', 4.7), (0.0, True, 'correct=0/774', 6.6)]
+--- five-file cut, real solver
+both-1.json 70.0 True score=0.700000 (70.00/100), correct=5/5 328
+both-2.json 70.0 True score=0.700000 (70.00/100), correct=5/5 348
+old-1.json 0.0 True score=0.000000 (0.00/100), correct=0/0 14
+old-2.json 0.0 True score=0.000000 (0.00/100), correct=0/0 13
+old-3.json 0.0 True score=0.000000 (0.00/100), correct=0/0 13
+stack-1.json 70.0 True score=0.700000 (70.00/100), correct=5/5 358
+stack-2.json 70.0 True score=0.700000 (70.00/100), correct=5/5 325
+status-1.json None False evaluator exited with status 1 before writing a score file 12
+status-2.json None False evaluator exited with status 1 before writing a score file 12
+status-3.json None False evaluator exited with status 1 before writing a score file 14
+empty-p1-new.json 0.0 True score=0.000000 (0.00/100), correct=0/0 0
+empty-p1-old.json 0.0 True score=0.000000 (0.00/100), correct=0/0 0
+--- run.sh under a shell limit, reproducer
+new-as1800m stack,as 8192 1800000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: cannot start the validator thread: can't start new t
+new-as2110000 stack,as 8192 2110000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: cannot start the validator thread: can't start new t
+new-as2130000 stack,as 8192 2130000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: cannot start the validator thread: can't start new t
+new-as2150000 stack,as 8192 2150000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: cannot start the validator thread: can't start new t
+new-as2200000 stack,as 8192 2200000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: cannot start the validator thread: can't start new t
+new-as2300000 stack,as 8192 2300000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: the validator ran out of memory
+new-as2300000b stack,as 8192 2300000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: the validator ran out of memory
+new-as2400000 stack,as 8192 2400000 | True score=0.001077 (0.11/100), correct=1/774 | 
+new-as2500000 stack,as 8192 2500000 | True score=0.001077 (0.11/100), correct=1/774 | 
+new-as2700000 stack,as 8192 2700000 | True score=0.001077 (0.11/100), correct=1/774 | 
+new-default stack,as 8192 unlimited | True score=0.001077 (0.11/100), correct=1/774 | 
+old-as1800m stack,as 8192 1800000 | True score=0.000000 (0.00/100), correct=0/0 | BrokenProcessPool
+old-default stack,as 8192 unlimited | True score=0.000000 (0.00/100), correct=0/0 | BrokenProcessPool
+old-stack1g stack,as 1048576 unlimited | True score=0.000000 (0.00/100), correct=0/774 | 
+old-stackunl stack,as unlimited unlimited | True score=0.000000 (0.00/100), correct=0/774 | 
+--- deep shapes, final code
+{'code': 'final.py', 'shape': 'and', 'depth': 999000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 6.9, 'rss_mib': 1459}
+{'code': 'final.py', 'shape': 'and', 'depth': 500100, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 5.1, 'rss_mib': 1001}
+{'code': 'final.py', 'shape': 'and', 'depth': 334000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 4.3, 'rss_mib': 959}
+{'code': 'final.py', 'shape': 'or', 'depth': 999000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 6.1, 'rss_mib': 1459}
+{'code': 'final.py', 'shape': 'or', 'depth': 500100, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 4.5, 'rss_mib': 1012}
+{'code': 'final.py', 'shape': 'or', 'depth': 334000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 4.5, 'rss_mib': 969}
+{'code': 'final.py', 'shape': 'ite', 'depth': 999000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 8.8, 'rss_mib': 1963}
+{'code': 'final.py', 'shape': 'ite', 'depth': 500100, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 5.3, 'rss_mib': 1285}
+{'code': 'final.py', 'shape': 'ite', 'depth': 334000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 3.4, 'rss_mib': 1123}
+{'code': 'final.py', 'shape': 'eq', 'depth': 999000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded while calling a Python object', 'secs': 5.5, 'rss_mib': 1586}
+{'code': 'final.py', 'shape': 'eq', 'depth': 500100, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded while calling a Python object', 'secs': 3.7, 'rss_mib': 1490}
+{'code': 'final.py', 'shape': 'eq', 'depth': 334000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 3.6, 'rss_mib': 1079}
+{'code': 'final.py', 'shape': 'let', 'depth': 999000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 10.9, 'rss_mib': 2327}
+{'code': 'final.py', 'shape': 'let', 'depth': 500100, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 6.1, 'rss_mib': 1367}
+{'code': 'final.py', 'shape': 'let', 'depth': 334000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 4.4, 'rss_mib': 1184}
+{'code': 'final.py', 'shape': 'plus', 'depth': 999000, 'verdict': 'rejected', 'exc': 'ModelValidationError', 'msg': 'unknown symbol 0', 'secs': 5.4, 'rss_mib': 1332}
+{'code': 'final.py', 'shape': 'plus', 'depth': 500100, 'verdict': 'rejected', 'exc': 'ModelValidationError', 'msg': 'unknown symbol 0', 'secs': 4.3, 'rss_mib': 1020}
+{'code': 'final.py', 'shape': 'plus', 'depth': 334000, 'verdict': 'rejected', 'exc': 'ModelValidationError', 'msg': 'unknown symbol 0', 'secs': 3.9, 'rss_mib': 999}
+{'code': 'final.py', 'shape': 'itea', 'depth': 999000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded while calling a Python object', 'secs': 8.1, 'rss_mib': 1897}
+{'code': 'final.py', 'shape': 'itea', 'depth': 500100, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded while calling a Python object', 'secs': 4.6, 'rss_mib': 1252}
+{'code': 'final.py', 'shape': 'itea', 'depth': 334000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded while calling a Python object', 'secs': 3.6, 'rss_mib': 1101}
+{'code': 'final.py', 'shape': 'uf', 'depth': 999000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 5.0, 'rss_mib': 1490}
+{'code': 'final.py', 'shape': 'uf', 'depth': 500100, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 3.8, 'rss_mib': 1428}
+{'code': 'final.py', 'shape': 'uf', 'depth': 334000, 'verdict': 'rejected', 'exc': 'ModelValidationError', 'msg': 'missing model value for (f x)', 'secs': 2.9, 'rss_mib': 961}
+{'code': 'final.py', 'shape': 'not', 'depth': 999000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded while calling a Python object', 'secs': 5.9, 'rss_mib': 1830}
+{'code': 'final.py', 'shape': 'imp', 'depth': 999000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 7.8, 'rss_mib': 1889}
+{'code': 'final.py', 'shape': 'mul', 'depth': 999000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 8.9, 'rss_mib': 1769}
+{'code': 'final.py', 'shape': 'define', 'depth': 100000, 'verdict': 'accepted', 'exc': None, 'msg': None, 'secs': 29.6, 'rss_mib': 485}
+{'code': 'final.py', 'shape': 'define', 'depth': 200000, 'verdict': 'accepted', 'exc': None, 'msg': None, 'secs': 112.5, 'rss_mib': 949}
+{'code': 'final.py', 'shape': 'define', 'depth': 340000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 183.9, 'rss_mib': 1262}
+{'code': 'final.py', 'shape': 'define', 'depth': 1000100, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded', 'secs': 191.8, 'rss_mib': 1762}
+{'code': 'final.py', 'shape': 'defplus', 'depth': 340000, 'verdict': 'rejected', 'exc': 'ModelValidationError', 'msg': 'unknown symbol 0', 'secs': 184.0, 'rss_mib': 1282}
+{'code': 'final.py', 'shape': 'defeq', 'depth': 340000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded while calling a Python object', 'secs': 8.0, 'rss_mib': 1622}
+{'code': 'final.py', 'shape': 'defuf', 'depth': 340000, 'verdict': 'rejected', 'exc': 'RecursionError', 'msg': 'maximum recursion depth exceeded while calling a Python object', 'secs': 307.3, 'rss_mib': 1571}
+runs 34
+capped, no verdict [('not', '500100', 'cap=330'), ('not', '334000', 'cap=330'), ('imp', '500100', 'cap=330'), ('imp', '334000', 'cap=330'), ('mul', '500100', 'cap=330'), ('mul', '334000', 'cap=330')]
+tally {'RecursionError': 27, 'ModelValidationError (literal parse at limit)': 4, 'ModelValidationError (witness incomplete)': 1, 'accepted': 2} CRASH 0 total runs 40 shapes 15 max_rss_mib 2327

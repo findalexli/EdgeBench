@@ -1,0 +1,80 @@
+--- pair job 1 exit=124 order 
+seval real old real.tar.gz 1400; seval real new real.tar.gz 1400
+old valid True score 0.0 correct=0/0 grade_s 1486 BrokenProcessPool 1 {}
+new no report
+ container 3d58cd4793fb sampled_s 1449 oom_kill 0 first_at_s None
+ container c7cc87fc022b sampled_s 1749 oom_kill 8 first_at_s 664
+ judge files, new, same as sforge build image: True
+--- pair job 2 exit=0 order 
+seval real new real.tar.gz 1400; seval real old real.tar.gz 1400
+old valid True score 0.0 correct=0/0 grade_s 1533 BrokenProcessPool 1 {}
+new valid True score 46.58 correct=331/774 grade_s 1596 BrokenProcessPool 0 {'QF_LIA': (77, 1, 139, 0), 'QF_LRA': (51, 0, 154, 0), 'QF_UF': (109, 27, 23, 0), 'QF_UFLRA': (94, 0, 1, 6)}
+ container d74651915858 sampled_s 1570 oom_kill 6 first_at_s 1510
+ container de95e0667880 sampled_s 1509 oom_kill 0 first_at_s None
+ judge files, new, same as sforge build image: True
+--- pair job 3 exit=0 order 
+seval real new real.tar.gz 1400; seval real old real.tar.gz 1400
+old no report
+new valid True score 46.64 correct=332/774 grade_s 1884 BrokenProcessPool 0 {'QF_LIA': (77, 1, 139, 0), 'QF_LRA': (51, 0, 154, 0), 'QF_UF': (109, 27, 24, 0), 'QF_UFLRA': (95, 0, 1, 6)}
+ container c60012021702 sampled_s 1871 oom_kill 6 first_at_s 1510
+ judge files, new, same as sforge build image: True
+--- pair job 4 exit=0 order 
+seval real new real.tar.gz 1400; seval real old real.tar.gz 1400
+old valid True score 0.0 correct=0/0 grade_s 1551 BrokenProcessPool 1 {}
+new valid True score 46.45 correct=330/774 grade_s 1603 BrokenProcessPool 0 {'QF_LIA': (76, 1, 140, 0), 'QF_LRA': (51, 0, 154, 0), 'QF_UF': (109, 27, 24, 0), 'QF_UFLRA': (94, 0, 1, 6)}
+ container 31fd7e6a72a1 sampled_s 1570 oom_kill 6 first_at_s 1510
+ container e429d49434c3 sampled_s 1540 oom_kill 0 first_at_s None
+ judge files, new, same as sforge build image: True
+--- pair job 5 exit=124 order 
+seval real new real.tar.gz 1400; seval real old real.tar.gz 1400
+old no report
+new valid True score 44.93 correct=322/774 grade_s 1665 BrokenProcessPool 0 {'QF_LIA': (73, 1, 143, 0), 'QF_LRA': (46, 0, 161, 0), 'QF_UF': (109, 27, 29, 0), 'QF_UFLRA': (94, 0, 1, 7)}
+ container 2c24de49be9a sampled_s 1631 oom_kill 7 first_at_s 1571
+ container 3bb935bad009 sampled_s 1571 oom_kill 0 first_at_s None
+ judge files, new, same as sforge build image: True
+--- checks job exit=0 old edgebench.judge.smt_solver:cd3a5bf1f538 new edgebench.judge.smt_solver:54ec38489dd3
+('buildfail', 'new') [(0.0, True, 'correct=0/0', 0), (0.0, True, 'correct=0/0', 0)]
+('buildfail', 'old') [(0.0, True, 'correct=0/0', 0), (0.0, True, 'correct=0/0', 0)]
+('ground_wrong', 'new') [(0.0, True, 'correct=0/774', 18), (0.0, True, 'correct=0/774', 18)]
+('ground_wrong', 'old') [(0.0, True, 'correct=0/774', 17), (0.0, True, 'correct=0/774', 18)]
+('nosolve', 'new') [(0.0, True, 'correct=0/0', 0), (0.0, True, 'correct=0/0', 0)]
+('nosolve', 'old') [(0.0, True, 'correct=0/0', 0), (0.0, True, 'correct=0/0', 0)]
+('preflight', 'new') [(0.0, True, 'correct=0/0', 0), (0.0, True, 'correct=0/0', 0)]
+('preflight', 'old') [(0.0, True, 'correct=0/0', 0), (0.0, True, 'correct=0/0', 0)]
+('stub', 'new') [(0.11, True, 'correct=1/774', 8), (0.11, True, 'correct=1/774', 8)]
+('stub', 'old') [(0.0, True, 'correct=0/0', 9), (0.0, True, 'correct=0/0', 11)]
+('textual', 'new') [(6.28, True, 'correct=42/774', 25), (6.28, True, 'correct=42/774', 26)]
+('textual', 'old') [(6.28, True, 'correct=42/774', 26), (6.28, True, 'correct=42/774', 25)]
+('unknown', 'new') [(0.0, True, 'correct=0/774', 5), (0.0, True, 'correct=0/774', 5)]
+('unknown', 'old') [(0.0, True, 'correct=0/774', 5), (0.0, True, 'correct=0/774', 6)]
+both-1.json 70.0 True score=0.700000 (70.00/100), correct=5/5 357
+both-2.json 70.0 True score=0.700000 (70.00/100), correct=5/5 363
+old-1.json 0.0 True score=0.000000 (0.00/100), correct=0/0 14
+old-2.json 0.0 True score=0.000000 (0.00/100), correct=0/0 12
+old-3.json 0.0 True score=0.000000 (0.00/100), correct=0/0 12
+stack-1.json 70.0 True score=0.700000 (70.00/100), correct=5/5 313
+stack-2.json 70.0 True score=0.700000 (70.00/100), correct=5/5 359
+status-1.json None False evaluator exited with status 1 before writing a score file 12
+status-2.json None False evaluator exited with status 1 before writing a score file 12
+status-3.json None False evaluator exited with status 1 before writing a score file 12
+empty-p1-new.json 0.0 True score=0.000000 (0.00/100), correct=0/0 0
+empty-p1-old.json 0.0 True score=0.000000 (0.00/100), correct=0/0 0
+--- direct run.sh under a shell limit, reproducer
+new-as1800m stack,as 8192 1800000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: cannot start the validator thread: can't s
+new-as2110000 stack,as 8192 2110000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: cannot start the validator thread: can't s
+new-as2130000 stack,as 8192 2130000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: cannot start the validator thread: can't s
+new-as2150000 stack,as 8192 2150000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: cannot start the validator thread: can't s
+new-as2200000 stack,as 8192 2200000 | False evaluator exited with status 1 before writing a score file | ValidatorFailure: cannot start the validator thread: can't s
+new-default stack,as 8192 unlimited | True score=0.001077 (0.11/100), correct=1/774 | 
+old-as1800m stack,as 8192 1800000 | True score=0.000000 (0.00/100), correct=0/0 | BrokenProcessPool
+old-default stack,as 8192 unlimited | True score=0.000000 (0.00/100), correct=0/0 | BrokenProcessPool
+old-stack1g stack,as 1048576 unlimited | True score=0.000000 (0.00/100), correct=0/774 | 
+old-stackunl stack,as unlimited unlimited | True score=0.000000 (0.00/100), correct=0/774 | 
+new-as2300000 stack,as  [QF_UF] Evaluating 192 benchmarks... | False evaluator exited with status 1 before writing a score file | ValidatorFailure: the validator ran out of memory
+new-as2400000 stack,as  [QF_UF] Evaluating 192 benchmarks... | True score=0.001077 (0.11/100), correct=1/774 | 
+new-as2500000 stack,as  [QF_UF] Evaluating 192 benchmarks... | True score=0.001077 (0.11/100), correct=1/774 | 
+new-as2700000 stack,as  [QF_UF] Evaluating 192 benchmarks... | True score=0.001077 (0.11/100), correct=1/774 | 
+new-as2300000 stack,as  [QF_UF] Evaluating 192 benchmarks... | False evaluator exited with status 1 before writing a score file | ValidatorFailure: the validator ran out of memory
+new-as2400000 stack,as  [QF_UF] Evaluating 192 benchmarks... | True score=0.001077 (0.11/100), correct=1/774 | 
+new-as2500000 stack,as  [QF_UF] Evaluating 192 benchmarks... | True score=0.001077 (0.11/100), correct=1/774 | 
+new-as2700000 stack,as  [QF_UF] Evaluating 192 benchmarks... | True score=0.001077 (0.11/100), correct=1/774 | 
