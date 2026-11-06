@@ -1,0 +1,4 @@
+violations []
+rc 0 lua_error_lines 148
+20261105 09:41:45 error scripting/lua: ~add-ons/my_ai/ca_recruit.lua:23: variable 'io' must be assigned before being used
+	~add-ons/my_ai/ca_recruit.lua:23: in main chunk

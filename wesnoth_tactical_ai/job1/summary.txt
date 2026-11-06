@@ -1,0 +1,19 @@
+setup_s 93
+one_games_done t=112
+sforge hold-1 old rc=0 wall=146 t=258
+sforge hold-1 new rc=0 wall=98 t=356
+sforge rca-1 old rc=0 wall=150 t=506
+sforge rca-1 new rc=0 wall=140 t=646
+sforge lua-1 old rc=0 wall=142 t=788
+sforge lua-1 new rc=0 wall=133 t=921
+sforge hold-2 old rc=0 wall=141 t=1062
+sforge hold-2 new rc=0 wall=97 t=1159
+sforge rca-2 old rc=0 wall=147 t=1306
+sforge rca-2 new rc=0 wall=154 t=1460
+sforge lua-2 old rc=0 wall=149 t=1609
+sforge lua-2 new rc=0 wall=142 t=1751
+sforge starter-1 old rc=0 wall=77 t=1828
+sforge starter-1 new rc=0 wall=79 t=1907
+sforge example-1 old rc=0 wall=151 t=2058
+sforge example-1 new rc=0 wall=147 t=2205
+done

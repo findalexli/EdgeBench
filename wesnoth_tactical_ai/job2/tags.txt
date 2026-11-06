@@ -1,0 +1,3 @@
+old edgebench.judge.wesnoth_tactical_ai:ace23e06dc3b new edgebench.judge.wesnoth_tactical_ai:567461e29768
+sha256:df989aa099f828b292f100158c0d6e2aada71fac30bfb3adf8cecfd357105c20
+sha256:a669389ca797ba240b854eeb17b1ae7c28aa4196231507faa005e2fcd1506efa

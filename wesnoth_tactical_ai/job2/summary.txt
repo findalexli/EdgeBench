@@ -1,0 +1,6 @@
+setup_s 60
+sforge starter-2 old rc=0 wall=80 t=140
+sforge starter-2 new rc=0 wall=81 t=221
+sforge example-2 old rc=0 wall=154 t=375
+sforge example-2 new rc=0 wall=149 t=524
+done

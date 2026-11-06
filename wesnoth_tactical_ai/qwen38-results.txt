@@ -1,0 +1,3 @@
+# clean repeat, both images verified: community21-wesnoth-qwen38b
+wesnoth qwen38 old n 4 scores [48.0, 67.0, 57.0, 58.0] mean 57.5 wins [23, 38, 30, 32] runtime_s [241, 251, 246, 254] valid {True} timed_out {False}
+wesnoth qwen38 new n 4 scores [81.0, 81.0, 76.0, 79.0] mean 79.25 wins [47, 47, 44, 46] runtime_s [214, 187, 217, 205] valid {True} timed_out {False}

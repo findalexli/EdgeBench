@@ -1,0 +1,26 @@
+diff --git a/edgebench/tasks/wesnoth_tactical_ai/judge/eval_wesnoth.py b/edgebench/tasks/wesnoth_tactical_ai/judge/eval_wesnoth.py
+index 0621204..10a4410 100644
+--- a/edgebench/tasks/wesnoth_tactical_ai/judge/eval_wesnoth.py
++++ b/edgebench/tasks/wesnoth_tactical_ai/judge/eval_wesnoth.py
+@@ -53,7 +53,7 @@ end
+ if os and os.execute then
+     os.execute = function(...) error("SE-Bench: os.execute is forbidden") end
+ end
+-if io then
++if rawget(_G, "io") then
+     io.open = function(...) error("SE-Bench: io.open is forbidden") end
+ end
+ """
+diff --git a/edgebench/tasks/wesnoth_tactical_ai/task.toml b/edgebench/tasks/wesnoth_tactical_ai/task.toml
+index 4d9e52b..20ce0fe 100644
+--- a/edgebench/tasks/wesnoth_tactical_ai/task.toml
++++ b/edgebench/tasks/wesnoth_tactical_ai/task.toml
+@@ -4,7 +4,7 @@ name = "Wesnoth Tactical Ai"
+ category = "Interactive Games & Simulators"
+ language = "Python"
+ description = "Write tactical AI logic for Battle for Wesnoth that defeats the built-in AI through custom recruitment, focus-fire targeting, terrain exploitation, and village-capture timing across multiple maps."
+-version = "1.0.0"
++version = "1.1.0"
+ status = "migrated"
+ 
+ [environment]

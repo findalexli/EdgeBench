@@ -1,0 +1,12 @@
+{
+ "task": "arc_compiler_runtime",
+ "archive": "/job/subs/agent36_array.tar.gz",
+ "raw_score": 94.81,
+ "score_0_100": 94.81,
+ "valid": true,
+ "summary": "Score: 94.81, raw: 416/448, weighted: 2816/2970",
+ "exit_code": 0,
+ "timed_out": false,
+ "runtime_s": 16.4,
+ "result_found": true
+}

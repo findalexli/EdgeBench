@@ -1,0 +1,6 @@
+setup_s 22
+agent36-p1 old rc=0 t=40
+array-p1 old rc=0 t=56
+agent36-p2 old rc=0 t=73
+array-p2 old rc=0 t=90
+done

@@ -1,0 +1,333 @@
+Evaluating archive for task: wesnoth_tactical_ai
+  Archive size: 13159 bytes
+  Run ID:       qwen38-12-old
+  Log dir:      /job/out/sf/runs/qwen38-12-old/wesnoth_tactical_ai/submissions/manual-1
+
+
+Results:
+  Valid:       True
+  Score:       67.0
+  Score 0-100: 67.0
+  Summary:     38/60 tests passed. Failed: case_0000_WA, case_0002_WA, case_0008_WA, case_0009_WA, case_0012_WA, case_0015_WA, case_0017_WA, case_0018_WA, case_0022_WA, case_0023_WA (+12 more)
+  Runtime:     250.91s
+  Timed out:   False
+
+{
+  "task_id": "wesnoth_tactical_ai",
+  "submission_id": "qwen38-12-old",
+  "score": 67.0,
+  "score_0_100": 67.0,
+  "valid": true,
+  "summary": "38/60 tests passed. Failed: case_0000_WA, case_0002_WA, case_0008_WA, case_0009_WA, case_0012_WA, case_0015_WA, case_0017_WA, case_0018_WA, case_0022_WA, case_0023_WA (+12 more)",
+  "details": [
+    {
+      "name": "case_0000_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0001",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0002_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0003",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0004",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0005",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0006",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0007",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0008_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0009_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0010",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0011",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0012_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0013",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0014",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0015_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0016",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0017_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0018_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0019",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0020",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0021",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0022_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0023_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0024",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0025",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0026",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0027",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0028_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0029",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0030_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0031_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0032",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0033",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0034_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0035",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0036",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0037",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0038",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0039",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0040",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0041_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0042",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0043",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0044_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0045_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0046_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0047",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0048",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0049",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0050",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0051_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0052",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0053",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0054",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0055",
+      "status": "PASSED",
+      "score": 1.0
+    },
+    {
+      "name": "case_0056_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0057_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0058_WA",
+      "status": "FAILED",
+      "score": 0.0
+    },
+    {
+      "name": "case_0059",
+      "status": "PASSED",
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "cases_passed": 38,
+    "cases_total": 60,
+    "eval_exit_code": 0
+  },
+  "timed_out": false,
+  "runtime_seconds": 250.91332626342773,
+  "submitted_at": 1793872401.1551425,
+  "error": null
+}

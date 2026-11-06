@@ -1,0 +1,2 @@
+base edgebench.work.schemathesis_datagen_pipeline:8911231cbfba edgebench.judge.schemathesis_datagen_pipeline:484f15fd657f 0
+new edgebench.work.schemathesis_datagen_pipeline:8911231cbfba edgebench.judge.schemathesis_datagen_pipeline:484f15fd657f 1

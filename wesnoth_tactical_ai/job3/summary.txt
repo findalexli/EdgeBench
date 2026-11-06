@@ -1,0 +1,12 @@
+setup_s 80
+diag old rc=0
+diag new rc=0
+sforge qwen38-11 old rc=0 wall=257 t=345
+sforge qwen38-11 new rc=0 wall=230 t=575
+sforge qwen38-12 new rc=0 wall=202 t=777
+sforge qwen38-12 old rc=0 wall=267 t=1044
+sforge qwen38-13 old rc=0 wall=262 t=1306
+sforge qwen38-13 new rc=0 wall=233 t=1539
+sforge qwen38-14 new rc=0 wall=221 t=1760
+sforge qwen38-14 old rc=0 wall=271 t=2031
+done

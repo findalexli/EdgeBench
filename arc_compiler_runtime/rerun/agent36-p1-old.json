@@ -1,0 +1,12 @@
+{
+ "task": "arc_compiler_runtime",
+ "archive": "/job/subs/agent36.tar.gz",
+ "raw_score": 61.31,
+ "score_0_100": 61.31,
+ "valid": true,
+ "summary": "Score: 61.31, raw: 289/448, weighted: 1821/2970",
+ "exit_code": 0,
+ "timed_out": false,
+ "runtime_s": 16.2,
+ "result_found": true
+}

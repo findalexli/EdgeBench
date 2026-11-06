@@ -1,0 +1,33 @@
+starter measured bpi vs stored: {'docids': (38.982, 5.13), 'ts_sec': (40.0, 4.86), 'ts_ns': (39.481, 8.11), 'temp': (16.0, 4.27), 'grid': (39.496, 17.54), 'zipf': (12.626, 7.32), 'rand': (39.496, 32.1), 'sparse': (38.588, 6.89)}
+a3f51d3ba2 orig-r2 agent-14 n 2 old 73.599 newraw 166.920 new_1_320 52.013
+4215fcb6ae orig-r2 agent-15 n 18 old 73.462 newraw 165.854 new_1_320 51.679
+75751722f0 orig-r2 agent-13 n 1 old 73.241 newraw 165.595 new_1_320 51.597
+4af3044e93 orig-r2 agent-8 n 2 old 72.961 newraw 165.100 new_1_320 51.442
+d744a143bb orig-r2 agent-9 n 16 old 72.213 newraw 160.328 new_1_320 49.946
+2df91a2723 orig-r2 agent-7 n 1 old 72.097 newraw 156.162 new_1_320 48.640
+047d9d5a26 orig agent-3 n 2 old 71.840 newraw 159.603 new_1_320 49.719
+f52adc81ae orig agent-2 n 1 old 71.344 newraw 157.657 new_1_320 49.109
+84b270692d orig agent-4 n 3 old 70.074 newraw 148.706 new_1_320 46.303
+2b8f30d548 orig auto-8 n 1 old 69.886 newraw 147.058 new_1_320 45.786
+573dab773d orig-r2 agent-12 n 3 old 69.154 newraw 144.663 new_1_320 45.035
+7f76d0819b orig-r2 agent-10 n 3 old 68.628 newraw 143.470 new_1_320 44.661
+da8404162c orig-r2 auto-7 n 1 old 67.194 newraw 137.701 new_1_320 42.853
+a381dfd64b orig-r2 auto-6 n 1 old 66.883 newraw 135.995 new_1_320 42.318
+d51ada0f00 orig-r2 agent-4 n 1 old 66.063 newraw 133.376 new_1_320 41.497
+369c9dc998 orig-r2 agent-5 n 2 old 65.539 newraw 133.089 new_1_320 41.407
+da8bf69843 orig-r2 agent-3 n 2 old 64.820 newraw 125.756 new_1_320 39.109
+4c3101098b orig-r2 auto-8 n 1 old 63.537 newraw 118.592 new_1_320 36.863
+fbc00718dd orig-r2 agent-6 n 2 old 63.084 newraw 125.936 new_1_320 39.165
+f51fc943a0 orig auto-3 n 1 old 60.931 newraw 108.150 new_1_320 33.589
+a0add9f4f1 orig-r2 auto-5 n 1 old 57.677 newraw 119.313 new_1_320 37.089
+1bba055fcc orig-r2 agent-2 n 2 old 46.971 newraw 105.972 new_1_320 32.907
+116a9e5a8f orig-r2 agent-1 n 2 old 41.716 newraw 91.082 new_1_320 28.239
+16cd90d655 orig agent-1 n 1 old 41.554 newraw 81.553 new_1_320 25.252
+ba2de33700 orig auto-6 n 1 old 36.252 newraw 76.771 new_1_320 23.753
+8637d41d26 orig auto-1 n 1 old 0.251 newraw 0.850 new_1_320 -0.047
+00e4da6819 orig-r2 auto-1 n 1 old 0.251 newraw 0.847 new_1_320 -0.048
+pairs 351 flips 6 robust(all repeats separated in both scales) 3
+('4c3101098b', 'orig-r2', 'auto-8', 1, 'a0add9f4f1', 'orig-r2', 'auto-5', 1, 5.86, -0.721)
+('f51fc943a0', 'orig', 'auto-3', 1, 'a0add9f4f1', 'orig-r2', 'auto-5', 1, 3.253, -11.163)
+('2df91a2723', 'orig-r2', 'agent-7', 1, 'f52adc81ae', 'orig', 'agent-2', 1, 0.753, -1.495)
+flips where both files have n>=2 repeats and all repeats separate in both scales: 0 []
